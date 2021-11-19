@@ -1,0 +1,47 @@
+$rootColor1: #6190e8;
+.icon__highlighter {
+  border-radius: 50%;
+  color: $rootColor1;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid white;
+  &:hover {
+    color: white;
+    border: 1px solid white;
+    background-color: $rootColor1;
+  }
+}
+.modal__root {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  display: flex;
+  .modal__root__container {
+    background: #fff;
+    min-width: 300px;
+    min-height: 300px;
+    margin: auto;
+    width: fit-content;
+    box-shadow: 0px 1px 10px 1px lightgrey;
+    padding: calc(2rem);
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .modal-close {
+      position: absolute;
+      right: 6px;
+      top: 9px;
+      cursor: pointer;
+      @extend .icon__highlighter;
+    }
+  }
+}

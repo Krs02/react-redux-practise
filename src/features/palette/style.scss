@@ -1,0 +1,15 @@
+.palette {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  .palette_container {
+    display: flex;
+    .sample_color_container {
+      width: auto;
+      height: 2rem;
+      border: 1px solid cornsilk;
+      border-radius: 10px;
+    }
+  }
+}
