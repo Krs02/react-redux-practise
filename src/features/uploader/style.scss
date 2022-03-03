@@ -1,0 +1,37 @@
+.uploader {
+  display: flex;
+  justify-content: center;
+  .main__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .row {
+      display: inline-flex;
+      flex-direction: row;
+      align-content: flex-start;
+      align-items: baseline;
+      align-self: flex-start;
+      .column {
+        label {
+          text-transform: capitalize;
+          font-size: calc(1rem);
+          font-weight: 500;
+          min-width: calc(8rem);
+          text-align: left;
+        }
+        &.addSkill {
+          position: relative;
+          .addIcon {
+            position: absolute;
+            right: 0;
+            cursor: pointer;
+          }
+        }
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+    }
+  }
+}
