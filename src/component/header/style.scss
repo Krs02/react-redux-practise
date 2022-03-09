@@ -1,0 +1,18 @@
+.header {
+  .main_container {
+    min-height: 15vh;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    .logo {
+      flex: 0.9;
+    }
+    .palette_icon {
+      flex: 0.1;
+      display: inline-flex;
+      flex-direction: row-reverse;
+      grid-gap: 20px;
+    }
+  }
+}
