@@ -1,0 +1,17 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  .row {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    .column {
+      display: inline-flex;
+      label {
+        min-width: 4rem;
+      }
+    }
+  }
+}
