@@ -1,0 +1,73 @@
+.profile_container {
+  display: flex;
+  margin: 16px;
+  .users {
+    display: grid;
+    /*
+          grid-template-columns: repeat(4, 1fr);
+          This would create only 4 column of equal size, wont be reponsive, 
+          grid-template-columns: repeat(auto-fill, min1fr);
+          This will create multiple column depending upon screen size, 
+          Every column would have min size of 400px
+      */
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    justify-items: start;
+    min-height: 5vh;
+    flex: 1;
+    .user_row {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 8px;
+      column-gap: 8px;
+      flex-direction: row;
+      justify-content: flex-start;
+      .face_icon {
+        transition: transform 2s ease-in-out 1s;
+        cursor: pointer;
+        .active {
+          color: rgb(58, 95, 3);
+        }
+        &:hover {
+          animation: face-icon-shake-head infinite 2s;
+        }
+      }
+      .details_section {
+        .name {
+          font-weight: 500;
+        }
+        .email {
+        }
+        .status {
+          font-family: Georgia cursive;
+          font-weight: bolder;
+          text-transform: capitalize;
+          &.active {
+            color: rgb(58, 95, 3);
+          }
+          &.inactive {
+            color: red;
+          }
+        }
+        .posts {
+          min-height: 200px;
+        }
+      }
+    }
+  }
+}
+@keyframes face-icon-shake-head {
+  0% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

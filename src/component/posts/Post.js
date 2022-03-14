@@ -28,14 +28,6 @@ function Post({ userId }) {
                     {post.id} : {post.title}
                   </div>
                   <div className="details">{post.body}</div>
-                  {/* {loadCommentLink ? (
-                    <div className="comments" onClick={(e) => loadComments(e, post.id)}>
-                      {" "}
-                      Load comments...
-                    </div>
-                  ) : (
-                    ""
-                  )} */}
                 </div>
                 <Comments postId={post.id} />
               </div>

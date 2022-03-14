@@ -1,6 +1,7 @@
 ## Available Scripts
 
-Introduction to React, component, Hooks like state, Selector, Ref with small POC project.
+POC project to introduce React components, Hooks like state, Selector, Dispatch, Ref 
+CSS - Grid layout, Flex
 
 ### `npm start`
 
