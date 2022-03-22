@@ -2,7 +2,7 @@
 
 Introduction to React, component, Hooks like state, Selector, Ref with small POC project.
 
-## TimeZone - shows diffrent timezones
+## TimeZone - shows time diffrent timezones
 
 ### `npm start`
 
