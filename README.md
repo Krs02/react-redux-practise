@@ -2,6 +2,8 @@
 
 Introduction to React, component, Hooks like state, Selector, Ref with small POC project.
 
+## TimeZone - shows diffrent timezones
+
 ### `npm start`
 
 Runs the app in the development mode.<br />
